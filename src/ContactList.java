@@ -30,17 +30,25 @@ public class ContactList {
 
     // Sorts the contacts (using bubble sort) using a given parameter
     public void sort(int sortBy) {
-        for (int i = 0; i < contacts.size() - 1; i++) {
-            for (int k = 0; k < contacts.size() - i - 1; k++) {
-                if (sortBy == 0) {
+        if (sortBy == 0) {
+            for (int i = 0; i < contacts.size() - 1; i++) {
+                for (int k = 0; k < contacts.size() - i - 1; k++) {
                     if (contacts.get(k).getFirstName().compareTo(contacts.get(k+1).getFirstName()) > 0) {
                         swap(k);
                     }
-                } else if (sortBy == 1) {
+                }
+            }
+        } else if (sortBy == 1) {
+            for (int i = 0; i < contacts.size() - 1; i++) {
+                for (int k = 0; k < contacts.size() - i - 1; k++) {
                     if (contacts.get(k).getLastName().compareTo(contacts.get(k+1).getLastName()) > 0) {
                         swap(k);
                     }
-                } else {
+                }
+            }
+        } else {
+            for (int i = 0; i < contacts.size() - 1; i++) {
+                for (int k = 0; k < contacts.size() - i - 1; k++) {
                     if (contacts.get(k).getPhoneNumber().compareTo(contacts.get(k+1).getPhoneNumber()) > 0) {
                         swap(k);
                     }
@@ -121,7 +129,7 @@ public class ContactList {
     public void addToList(Scanner sc) {
         System.out.println("Please Enter Below Which Type Of Person You Would Like To Add:");
         System.out.println("  1. Student");
-        System.out.println("  2. Teacher");
+        System.out.println("  2. Parent");
         String type = sc.nextLine();
         System.out.println("Please Enter Their First Name:");
         String first = sc.nextLine();
@@ -133,8 +141,8 @@ public class ContactList {
             System.out.println("Please Enter The Students Grade:");
             contacts.add(new Student(first, last, number, Integer.parseInt(sc.nextLine())));
         } else if (type.equals("2")) {
-            System.out.println("Please Enter What Class The Teacher Teaches:");
-            contacts.add(new Teacher(first, last, number, sc.nextLine()));
+            System.out.println("Please Enter The Name of This Parents Child:");
+            contacts.add(new Parent(first, last, number, sc.nextLine()));
         } else {
             contacts.add(new Person(first, last, number));
         }
@@ -201,11 +209,11 @@ public class ContactList {
     // This is a separate function that adds some test data to the contacts list used to test out how the code works
     public static void addTestDataSet(ContactList c) {
         Person s1 = new Student("Kieran", "Pichai", "667", 9);
-        Person s2 = new Teacher("Clifford", "Palmer", "668", "English");
+        Person s2 = new Parent("Clifford", "Palmer", "668", "Kieran");
         Person s3 = new Student("Angelica", "Chou", "234", 10);
-        Person s4 = new Teacher("Ben", "Park", "123", "Math");
+        Person s4 = new Parent("Ben", "Park", "123", "Angelica");
         Person s5 = new Student("Geoffrey", "Franc", "488", 11);
-        Person s6 = new Teacher("Natalie", "DeCherney", "239", "History");
+        Person s6 = new Parent("Kavan", "Kumar", "239", "Geoffrey");
         c.addContact(s1);
         c.addContact(s2);
         c.addContact(s3);

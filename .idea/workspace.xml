@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d759784a-f94d-4439-a153-1dfe31d0f0bf" name="Changes" comment="In this edition of ContactList, I added 4 classes: Person, Student, Teacher, and ContactList. For each of these I added their given instance variables, constructors, toStrings, getters, setters, and unique methods. The only step to complete before the submission of this project is to finish the run() function in ContactList and to add comments and make sure the code runs correctly without errors.">
+    <list default="true" id="d759784a-f94d-4439-a153-1dfe31d0f0bf" name="Changes" comment="In this edition, I completed edited and abstracted the ContactList class, I added new methods and mainly completed the run() function and all its helper functions. I also added comments to ContactList. I also fixed the formatting of things that were printed out into the console to make it easier to use and comprehend.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContactList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,24 +24,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2b6nHnL3GiFh9Ykhtwp4HlTYxND" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ContactList.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ContactList.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ContactList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ContactList" />
@@ -72,11 +73,20 @@
       <option name="project" value="LOCAL" />
       <updated>1705548306782</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="In this edition, I completed edited and abstracted the ContactList class, I added new methods and mainly completed the run() function and all its helper functions. I also added comments to ContactList. I also fixed the formatting of things that were printed out into the console to make it easier to use and comprehend.">
+      <option name="closed" value="true" />
+      <created>1705725724631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705725724631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="In this edition of ContactList, I added 4 classes: Person, Student, Teacher, and ContactList. For each of these I added their given instance variables, constructors, toStrings, getters, setters, and unique methods. The only step to complete before the submission of this project is to finish the run() function in ContactList and to add comments and make sure the code runs correctly without errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="In this edition of ContactList, I added 4 classes: Person, Student, Teacher, and ContactList. For each of these I added their given instance variables, constructors, toStrings, getters, setters, and unique methods. The only step to complete before the submission of this project is to finish the run() function in ContactList and to add comments and make sure the code runs correctly without errors." />
+    <MESSAGE value="In this edition, I completed edited and abstracted the ContactList class, I added new methods and mainly completed the run() function and all its helper functions. I also added comments to ContactList. I also fixed the formatting of things that were printed out into the console to make it easier to use and comprehend." />
+    <option name="LAST_COMMIT_MESSAGE" value="In this edition, I completed edited and abstracted the ContactList class, I added new methods and mainly completed the run() function and all its helper functions. I also added comments to ContactList. I also fixed the formatting of things that were printed out into the console to make it easier to use and comprehend." />
   </component>
 </project>
